@@ -53,4 +53,24 @@
     }
     ```
 
+**常用编辑**
 
+- 在文件中查找Symbol(这个Symbol该如何翻译): `Ctrl+Shift+O`
+- 在工作区中查找Symbol: `Ctrl+t`
+- 去掉尾部空格: `Ctrl+K Ctrl+X`
+- 格式化选中代码: `Ctrl+K Ctrl+F`
+- 格式化整个文档: `Shift+Alt+F`
+- 打开Markdown预览: `Ctrl+Shift+V`
+- 并排编辑Markdown文档: `Ctrl+K V`
+
+**集成Git**
+
+VS Code 自带了Git: `Ctrl+Shift+G`
+
+- 查看差异: 打开源码管理面板, 点击要查看的文件即可
+- 切换分支: 点击状态栏中的分支按钮
+- 暂存: 
+    - 暂存所有: 点击 `+`  
+    - 暂存选中部分: 选中文件片段, 然后在命令面板中输入 **Stage Selected Ranges**
+- 查看Git的输出: `Ctrl+Shift+U` 在下拉项中选择Git
+- 设置VS Code为Git的默认合并工具: `git config --global merge.tool code`
