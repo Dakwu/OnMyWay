@@ -1,1 +1,1 @@
-- [快速入门](Tips and Tricks.md)
+- [快速入门](Tips%20and%20Tricks.md)
