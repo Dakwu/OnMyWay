@@ -74,3 +74,16 @@ VS Code 自带了Git: `Ctrl+Shift+G`
     - 暂存选中部分: 选中文件片段, 然后在命令面板中输入 **Stage Selected Ranges**
 - 查看Git的输出: `Ctrl+Shift+U` 在下拉项中选择Git
 - 设置VS Code为Git的默认合并工具: `git config --global merge.tool code`
+- 设置VS Code为Git的默认编辑器: 
+
+    ```
+    git config --global core.editor "code --wait"
+    git config --global -e
+    在配置文件中加入:
+    [diff]
+        tool = difault-difftool
+    [difftool "default-difftool"]
+        cmd = code --wait --diff $LOCAL $REMOTE
+    ```
+
+    然后便可以使用 `git difftool` 来比较文件
